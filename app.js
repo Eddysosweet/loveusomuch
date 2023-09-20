@@ -11,7 +11,7 @@ var heartItem3 = document.querySelector(".heartItem.item3")
 var count = 0;
 var percentWidth = 0;
 var heartLeft = -3.2;
-var progressLoad = setInterval(progressInterva,100)
+var progressLoad = setInterval(progressInterval,100)
 
 button.addEventListener("click", function(){
     button.style.transform = "scale(0.8)";
@@ -21,7 +21,7 @@ button.addEventListener("click", function(){
     },200)
 })
 
-function progressInterva(){
+function progressInterval(){
     if(count == 100 && percentWidth == 100){
         clearInterval(progressLoad)
         percent.textContent = "Ok rùi đó:)";
